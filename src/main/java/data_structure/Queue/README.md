@@ -2,7 +2,6 @@
 
 <br/>
 
-![img](https://lh3.googleusercontent.com/proxy/OWd324VFnk2JdNutJPx7s-cKkTE1ydLj_3aFnOPUPSIG3clkCFEde2sSlVxq_mEpOhCN9fyyhqLa-ZPJKkJuLlpuRvw-5JFE9I35SwnoDu9SoNEMBGp9uyQxcQxQgQLHzNCWT3oLgXBR_YqM4snIPM-ZLYx1MS-_g7AI)
 ![img2](https://wayhome25.github.io/assets/post-img/cs/queue1.jpg)
 ![img3](https://wayhome25.github.io/assets/post-img/cs/queue2.jpg)
 

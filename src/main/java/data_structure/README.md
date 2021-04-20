@@ -6,3 +6,5 @@
 
 ## Completed list
 1. Tree
+2. Queue
+3. Stack
