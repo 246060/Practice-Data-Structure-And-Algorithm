@@ -21,6 +21,8 @@ wiki
 3. Top-Down
 4. Bottom-Up
 5. Memoization
+  - Sub Problem 결과 저장
+  - 이미 해결한 Sub Problem 은 다시 하지 않기 위해
 
 
 
