@@ -16,11 +16,13 @@ wiki
 
 
 ## Check List
-1. Problem -> Sub Problem 쪼개짐 
-2. 점화식
-3. Top-Down
-4. Bottom-Up
-5. Memoization
+1. Problem 을 Sub Problem 나눌 수 있는가?
+2. Sub Problem 으로 Problem 을 구할 수 있는가?
+3. 겹치는 Sub Problem 이 있는가?  
+4. 점화식
+5. Top-Down
+6. Bottom-Up
+7. Memoization
   - Sub Problem 결과 저장
   - 이미 해결한 Sub Problem 은 다시 하지 않기 위해
 
@@ -39,3 +41,10 @@ wiki
 
 ![img](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F267EC74E5702798727)
 
+피보나치 문제 풀이 가이드
+- Top-Down : HashMap
+    - time complexity : O(n)
+    - space complexity : O(n)
+- Bottom-Up : 변수 3개로 해결 가능
+    - time complexity : O(n)  
+    - space complexity : O(1)
