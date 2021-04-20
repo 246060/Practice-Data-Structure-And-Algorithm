@@ -39,7 +39,7 @@
      - 마지막 레벨을 제외한 모든 서브트리의 레벨이 같아야 하고, 마지막 레벨은 왼쪽부터 채워져 있어야 함.
        <br/><br/>
   3. Perfect Binary Tree  
-     - Perfect binary tree는 완벽한 피라미드 형태로, 빈공간 없이 모든 노드가 2개의 자식을 갖고있는 tree
+     - 완벽한 피라미드 형태로, 빈공간 없이 모든 노드가 2개의 자식을 갖고 있는 tree
        <br/><br/>
   4. Binary Search Tree
      - 자식노드는 최대 2개
