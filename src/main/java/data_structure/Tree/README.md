@@ -1,5 +1,7 @@
 # Tree 🌲
 
+![img](https://adrianmejia.com/images/tree-parts.jpg)
+
 - 계층형 자료구조 
 - 그래프의 일종 
   <br/><br/>
@@ -13,7 +15,7 @@
 - 사이클이 없는 방향 그래프를 말하는 DAG(Directed Acyclic Graph)의 한 종류
   - 개별 요소들이 특정한 방향을 향하고 있으며, 서로 순환하지 않는 구조 <br/><br/>
 - 여러 노드가 한 노드를 가리키지 않음
-    - 자식 노드는 하나의 out-degree를 가짐
+    - 각 노드는 하나의 in-degree만 가능
 
 <br/><br/>
 
@@ -24,11 +26,14 @@
 ### Binary Tree 👩‍👦‍👦
 부모 노드가 자식 노드를 최대 2개씩만 갖고 있는 트리  
 
+![img](https://media.vlpt.us/images/qksud14/post/1712bcce-475f-460d-bce8-b59f913d8995/full-complete-perfect-binary-tree.jpg)
+
 <br/>
 
-  1. Full binary Tree
+  1. Full Binary Tree
      - 자식 노드가 아예 없거나, 최대 둘뿐인 tree. 
      - 자식을 하나만 가진 노드가 없음
+ 
        <br/><br/>
   2. Complete Binary Tree
      - 마지막 레벨을 제외한 모든 서브트리의 레벨이 같아야 하고, 마지막 레벨은 왼쪽부터 채워져 있어야 함.
@@ -51,9 +56,13 @@
 - 자식 노드를 2개 이상 갖고 있는 트리 
 - Trie
 
-<br/>
+<br/><br/><br/>
+
 
 ### Balanced Tree
+
+![img](https://www.growingwiththeweb.com/images/2015/11/14/balanced-trees.svg)
+
 - Red-Black Tree
 - AVL tree
 
