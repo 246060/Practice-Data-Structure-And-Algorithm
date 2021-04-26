@@ -43,9 +43,7 @@ public class Baekjoon_1005_ACM_Craft {
 
             while (!q.isEmpty()) {
                 int cur = q.poll();
-                ArrayList<Integer> adjacents = nodes.get(cur);
-
-                for (int adjacent : adjacents) {
+                for (int adjacent : nodes.get(cur)) {
                     result[adjacent] = Math.max(result[adjacent], result[cur] + buildTimes[adjacent]);
                     if (--inDegrees[adjacent] == 0)
                         q.offer(adjacent);
