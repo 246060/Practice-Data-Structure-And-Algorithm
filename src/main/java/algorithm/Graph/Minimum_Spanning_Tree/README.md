@@ -34,9 +34,12 @@
 ## Prim's Minimum Spanning Tree
 
 - 그리디 : 매 순간 vertex의 적은 비용의 간선 선택하며 확장
+  
+
 - 종류 : 
   - Eager Prim's Minimum Spanning Tree
   - Lazy Prim's Minimum Spanning Tree
+
 
 - 구현 방법
   1. 시작점을 일반 큐에 넣고, mst에도 넣음
@@ -45,6 +48,12 @@
   4. 3번의 노드를 mst에 추가, cost 누적시킴
   5. 3번의 노드 방문 처리 후 일반 큐에 넣음
   6. n-1 개의 간선이 처리 될때 까지 2~5번 반복
+
+  
+- 의사코드(슈도코드, pseudocode)
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile7.uf.tistory.com%2Fimage%2F99B212455A465A991C216F)
+
 
 ![](https://algotree.org/images/Prims_MST_Java.svg)
 
