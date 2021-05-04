@@ -40,12 +40,50 @@ public class MinimumSpanningTree {
         edges.add(new int[]{5, 1, 3});
         edges.add(new int[]{5, 4, 4});
 
-        int minCost = lazyPrims(edges, N);
+        // MST = 9
+        int minCost;
 
+        System.out.println("\nPrim's -----------------------------------");
+        minCost = lazyPrims(edges, N);
+        System.out.println(minCost == 9);
+
+        System.out.println("\nKruskal -----------------------------------");
+        minCost = kruskal(edges, N);
         System.out.println(minCost == 9);
     }
 
-    private static int lazyPrims(ArrayList<int[]> edges, int n) {
+    static int kruskal(ArrayList<int[]> edges, int n) {
+
+        int minCost = 0;
+        ArrayList<int[]> mst = new ArrayList<>();
+
+        DisjointSetUnion dsu = new DisjointSetUnion();
+        int[] parent = dsu.makeSet(new int[n]);
+
+        PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(o -> o[2]));
+
+        // cost 기준 정렬
+        for (int[] edge : edges)
+            pq.offer(edge);
+
+        while (!pq.isEmpty()) {
+            int[] edge = pq.poll();
+
+            // 사이클 확인
+            if (dsu.find(parent, edge[0]) == dsu.find(parent, edge[1]))
+                continue;
+
+            dsu.union(parent, edge[0], edge[1]);
+
+            minCost += edge[2];
+            mst.add(edge);
+        }
+
+        print(mst);
+        return minCost;
+    }
+
+    static int lazyPrims(ArrayList<int[]> edges, int n) {
 
         int mincost = 0;
         ArrayList<int[]> mst = new ArrayList<>();
