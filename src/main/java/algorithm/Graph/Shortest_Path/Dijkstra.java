@@ -36,6 +36,13 @@ public class Dijkstra {
 
         int start = 1;
         solution(edges, n, start);
+
+        // 1 min : 0
+        // 2 min : 2
+        // 3 min : 3
+        // 4 min : 1
+        // 5 min : 2
+        // 6 min : 4
     }
 
     public static void solution(int[][] edges, int n, int start) {
