@@ -1,4 +1,4 @@
-package data_structure.Tree;
+package data_structure.Trie;
 
 import java.util.HashMap;
 
