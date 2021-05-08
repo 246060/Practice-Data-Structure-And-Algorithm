@@ -72,7 +72,8 @@ public class Dijkstra {
             int now = node.index;
             int dist = node.distance;
 
-            if (distance[now] < dist) continue;
+            if (distance[now] < dist)
+                continue;
 
             for (Node adj : graph.get(now)) {
                 int cost = distance[now] + adj.distance;
