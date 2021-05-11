@@ -29,10 +29,9 @@ public class Tarjan {
         a.get(11).add(3);
         a.get(11).add(8);
 
-        for (int i = 1; i <= V; i++) {
+        for (int i = 1; i <= V; i++)
             if (d[i] == 0)
                 dfs(i);
-        }
 
         // SCC의 갯수: 4
         // 1번째 SCC : [1, 2, 3]
@@ -60,15 +59,14 @@ public class Tarjan {
 
         int parent = d[x];
 
-        for (int y : a.get(x)) {
-            if (d[y] == 0) {
+        for (int y : a.get(x))
+            if (d[y] == 0)
                 parent = Math.min(parent, dfs(y));
-            } else if (!isFinished[y]) {
+            else if (!isFinished[y])
                 parent = Math.min(parent, d[y]);
-            }
-        }
 
-        if (parent == d[x]) {// 부모노드가 자기 자신인 경우
+        if (parent == d[x]) {
+            // 부모노드가 자기 자신인 경우
             ArrayList<Integer> scc = new ArrayList<>();
             while (true) {
                 int t = stack.pop();
@@ -78,6 +76,7 @@ public class Tarjan {
             }
             SCC.add(scc);
         }
+
         return parent;
     }
 }
