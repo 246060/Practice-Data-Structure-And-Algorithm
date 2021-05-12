@@ -19,6 +19,7 @@ public class Kosaraju {
     static Stack<Integer> stack;
 
     public static void main(String[] args) {
+
         int N = 11;
         SCC = new ArrayList<>();
 
@@ -92,5 +93,4 @@ public class Kosaraju {
 
         stack.push(v);
     }
-
 }

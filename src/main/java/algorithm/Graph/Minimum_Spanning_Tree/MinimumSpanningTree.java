@@ -99,7 +99,9 @@ public class MinimumSpanningTree {
             visited[cur] = true;
 
             for (int[] edge : edges) {
-                if (cur != edge[0]) continue;
+                if (cur != edge[0])
+                    continue;
+
                 if (!visited[edge[1]])
                     pq.offer(edge);
             }
