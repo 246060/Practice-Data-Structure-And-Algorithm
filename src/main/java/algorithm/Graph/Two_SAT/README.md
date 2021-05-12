@@ -1,4 +1,6 @@
 
+# 어렵다 이해 못함. 나중에 다시 공부하자
+
 # 2-SAT
 2-CNF Satisfiability Problem
 
