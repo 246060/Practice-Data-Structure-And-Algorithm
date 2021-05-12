@@ -1,6 +1,8 @@
-package algorithm.Array.Two_Pointer;
+package algorithm.Array;
 
-public class TwoPointer {
+import java.util.LinkedList;
+
+public class Example_Two_Pointer {
 
     public static void main(String[] args) {
 
@@ -15,18 +17,25 @@ public class TwoPointer {
         int cnt = 0;
         int subtotal = 0;
         int end = 0;
+        LinkedList<Integer> answer = new LinkedList<>();
 
         for (int start = 0; start < n; start++) {
+
             while (subtotal < m && end < n) {
                 subtotal += arr[end];
+                answer.addLast(arr[end]);
                 end++;
             }
+
             if (subtotal == m) {
                 cnt++;
+                System.out.format("%d : %s\n", cnt, answer);
             }
+
             subtotal -= arr[start];
+            answer.removeFirst();
         }
 
-        System.out.println(cnt);
+        System.out.format("총 %d개", cnt);
     }
 }
