@@ -52,27 +52,29 @@ public class Tarjan {
     static ArrayList<ArrayList<Integer>> SCC = new ArrayList<>();
     static Stack<Integer> stack = new Stack<>();
 
-    static int dfs(int x) {
+    static int dfs(int now) {
 
-        d[x] = ++id;   // 노드마다 고유한 번호를 할당
-        stack.push(x); // 스택을 자기 자신을 삽입
+        d[now] = ++id;   // 노드마다 고유한 번호를 할당
+        stack.push(now); // 스택을 자기 자신을 삽입
 
-        int parent = d[x];
+        int parent = d[now];
 
-        for (int y : a.get(x))
-            if (d[y] == 0)
-                parent = Math.min(parent, dfs(y));
-            else if (!isFinished[y])
-                parent = Math.min(parent, d[y]);
+        for (int adj : a.get(now))
+            if (d[adj] == 0)
+                // 경로 탐색이 되지 않는것
+                parent = Math.min(parent, dfs(adj));
+            else if (!isFinished[adj])
+                // SCC로 분류되지 않는것
+                parent = Math.min(parent, d[adj]);
 
-        if (parent == d[x]) {
+        if (parent == d[now]) {
             // 부모노드가 자기 자신인 경우
             ArrayList<Integer> scc = new ArrayList<>();
             while (true) {
                 int t = stack.pop();
                 scc.add(t);
                 isFinished[t] = true;
-                if (t == x) break;
+                if (t == now) break;
             }
             SCC.add(scc);
         }
