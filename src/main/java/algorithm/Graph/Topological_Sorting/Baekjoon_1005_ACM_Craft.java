@@ -1,8 +1,13 @@
 package algorithm.Graph.Topological_Sorting;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
 
 public class Baekjoon_1005_ACM_Craft {
+//    위상 정렬
+//    다이나믹 프로그래밍
 
     public static void main(String[] args) {
 
@@ -28,6 +33,7 @@ public class Baekjoon_1005_ACM_Craft {
                 int cur = sc.nextInt();
                 int adjacent = sc.nextInt();
                 nodes.get(cur).add(adjacent);
+
                 inDegrees[adjacent]++;
             }
 
@@ -43,9 +49,12 @@ public class Baekjoon_1005_ACM_Craft {
 
             while (!q.isEmpty()) {
                 int cur = q.poll();
+
                 for (int adjacent : nodes.get(cur)) {
                     result[adjacent] = Math.max(result[adjacent], result[cur] + buildTimes[adjacent]);
-                    if (--inDegrees[adjacent] == 0)
+                    inDegrees[adjacent]--;
+
+                    if (inDegrees[adjacent] == 0)
                         q.offer(adjacent);
                 }
             }

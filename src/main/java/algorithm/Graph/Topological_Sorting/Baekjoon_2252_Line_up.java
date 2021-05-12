@@ -37,10 +37,12 @@ public class Baekjoon_2252_Line_up {
 
         while (!q.isEmpty()) {
             int cur = q.poll();
+
             for (int node : nodes.get(cur)) {
                 inDegree[node]--;
+
                 if (inDegree[node] == 0) {
-                    q.add(node);
+                    q.offer(node);
                     System.out.print(node + " ");
                 }
             }

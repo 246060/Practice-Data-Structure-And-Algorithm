@@ -23,6 +23,7 @@ public class Baekjoon_1766_Workbook {
             int cur = sc.nextInt();
             int adjacent = sc.nextInt();
             nodes.get(cur).add(adjacent);
+
             inDegrees[adjacent]++;
         }
 
@@ -35,9 +36,12 @@ public class Baekjoon_1766_Workbook {
             int cur = q.poll();
             System.out.print(cur + " ");
 
-            for (int adjacent : nodes.get(cur))
-                if (--inDegrees[adjacent] == 0)
+            for (int adjacent : nodes.get(cur)) {
+                inDegrees[adjacent]--;
+
+                if (inDegrees[adjacent] == 0)
                     q.offer(adjacent);
+            }
         }
     }
 }

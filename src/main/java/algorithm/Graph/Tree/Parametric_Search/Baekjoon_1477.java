@@ -6,8 +6,6 @@ import java.util.Scanner;
 public class Baekjoon_1477 {
 
     public static void main(String[] args) {
-
-
 //        int N = 6;
 //        int M = 7;
 //        int L = 800;
@@ -33,6 +31,7 @@ public class Baekjoon_1477 {
 
         while (left <= right) {
             int mid = (left + right) / 2;
+
             if (isPossible(restAreas, M, mid)) {
                 answer = Math.min(answer, mid);
                 right = mid - 1;
