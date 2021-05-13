@@ -5,7 +5,7 @@ public class KMP {
     // https://www.geeksforgeeks.org/java-program-for-kmp-algorithm-for-pattern-searching-2/
 
     // Driver program to test above function
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         String txt = "ABABDABACDABABCABAB";
         String pat = "ABABCABAB";
@@ -18,7 +18,7 @@ public class KMP {
         int N = txt.length();
 
         // create lps[] that will hold the longest prefix suffix values for pattern
-        int lps[] = new int[M];
+        int[] lps = new int[M];
         int j = 0; // index for pat[]
 
         // Preprocess the pattern (calculate lps[] array)
@@ -46,7 +46,7 @@ public class KMP {
         }
     }
 
-    static void computeLPSArray(String pat, int M, int lps[]) {
+    static void computeLPSArray(String pat, int M, int[] lps) {
         // length of the previous longest prefix suffix
         int len = 0;
         int i = 1;
@@ -56,8 +56,8 @@ public class KMP {
         while (i < M) {
 
             if (pat.charAt(i) == pat.charAt(len)) {
+                lps[i] = len + 1;
                 len++;
-                lps[i] = len;
                 i++;
             } else { // (pat[i] != pat[len])
 
@@ -67,7 +67,8 @@ public class KMP {
                     len = lps[len - 1];
 
                     // Also, note that we do not increment i here
-                } else { // if (len == 0)
+                } else {
+                    // if (len == 0)
                     lps[i] = len;
                     i++;
                 }
