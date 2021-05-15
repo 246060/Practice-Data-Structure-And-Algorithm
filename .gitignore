@@ -1,5 +1,7 @@
 # My addition
-test/
+/src/test/
+/src/main/java/Line
+/src/main/java/Main.java
 
 ### VisualStudio template
 ## Ignore Visual Studio temporary files, build results, and
@@ -591,4 +593,5 @@ Temporary Items
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
 
