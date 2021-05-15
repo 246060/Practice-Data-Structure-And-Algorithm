@@ -1,6 +1,6 @@
 package algorithm.String;
 
-public class original_Boyer_Moore {
+public class Original_Boyer_Moore {
     // https://greatzzo.tistory.com/8
     // https://www.geeksforgeeks.org/boyer-moore-algorithm-good-suffix-heuristic/
 

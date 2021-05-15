@@ -2,7 +2,7 @@ package algorithm.Array;
 
 import java.util.LinkedList;
 
-public class Example_Two_Pointer {
+public class Two_Pointer {
 
     public static void main(String[] args) {
 

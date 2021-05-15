@@ -2,7 +2,7 @@ package algorithm.Array;
 
 import java.util.Arrays;
 
-public class Example_Prefix_Sum {
+public class Prefix_Sum {
     // 구간합 - 접두사 합 예제
 
     public static void main(String[] args) {
