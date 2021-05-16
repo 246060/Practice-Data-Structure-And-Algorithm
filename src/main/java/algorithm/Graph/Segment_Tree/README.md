@@ -8,6 +8,13 @@
 출처:  [CODEONWORT]
 
 
+## Keyword 정리
+- Lazy Propagation
+- Merge Sort Tree
+- Persistent Segment Tree
+
+
+---
 - https://codeonwort.tistory.com/331
 - https://java2blog.com/segment-tree-java/
 - https://www.geeksforgeeks.org/segment-tree-set-1-range-minimum-query/

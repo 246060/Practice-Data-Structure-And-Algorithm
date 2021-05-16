@@ -31,7 +31,8 @@
 
 
 # Bipartite Matching(이분 매칭)
-- HopcroftKarp Algorithm
+- Hopcroft-Karp Algorithm
+-  O(V^(1/2)E)
 - 간선의 용량이 전부 1인 이분 그래프에서의 최대 유량을 구하는 문제는 이분 그래프에서의 최대 매칭과 동치
 - 네트워크 플로우의 개념중에서 이분 그래프(bipartite grape)에서의 최대 유량을 구하는 경우를 이분 매칭이라고 부릅
 
@@ -78,3 +79,4 @@
 - https://www.javatips.net/api/java-algorithms-implementation-master/src/com/jwetherell/algorithms/graph/EdmondsKarp.java
 - https://www.programiz.com/dsa/ford-fulkerson-algorithm
 - https://koosaga.com/71
+- https://blog.naver.com/PostView.nhn?blogId=jqkt15&logNo=222046491940&redirect=Dlog&widgetTypeCall=true&topReferer=https%3A%2F%2Fblog.naver.com%2FPostView.nhn%3FblogId%3Djqkt15%26logNo%3D222070243236&directAccess=false
