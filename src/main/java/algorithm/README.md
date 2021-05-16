@@ -1,5 +1,5 @@
 # 알고리즘 스터디 기록
-목적 : 공부한 내용을 나중에 빠르게 참조하기 위해 기록해둔다.
+목적 : 공부한 내용을 나중에 빠르게 참조하기 위해 기록
 
 ##  참조 사이트
 
@@ -14,4 +14,4 @@
 - https://www.crocus.co.kr/category/Applied/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98?page=1
 
 # 알고리즘 시각화
-- https://algorithm-visualizer.org/ㄴ
+- https://algorithm-visualizer.org/
