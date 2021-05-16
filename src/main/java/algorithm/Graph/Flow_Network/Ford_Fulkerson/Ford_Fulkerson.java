@@ -1,4 +1,4 @@
-package algorithm.Graph.Flow_Network;
+package algorithm.Graph.Flow_Network.Ford_Fulkerson;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -11,7 +11,7 @@ public class Ford_Fulkerson {
     public static void main(String[] args) throws java.lang.Exception {
 
         // Let us create a graph shown in the above example
-        int graph[][] = new int[][]{
+        int[][] graph = new int[][]{
                 {0, 16, 13, 0, 0, 0},
                 {0, 0, 10, 12, 0, 0},
                 {0, 4, 0, 0, 14, 0},

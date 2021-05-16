@@ -1,4 +1,4 @@
-package algorithm.Graph.Flow_Network;
+package algorithm.Graph.Flow_Network.Ford_Fulkerson;
 
 import java.util.ArrayDeque;
 import java.util.Queue;

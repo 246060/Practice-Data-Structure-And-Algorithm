@@ -1,4 +1,4 @@
-package algorithm.Graph.Flow_Network;
+package algorithm.Graph.Flow_Network.Ford_Fulkerson;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -7,10 +7,10 @@ public class Minimum_Cut {
     // https://www.geeksforgeeks.org/minimum-cut-in-a-directed-graph/
 
     //Driver Program
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         // Let us create a graph shown in the above example
-        int graph[][] = {
+        int[][] graph = {
                 {0, 16, 13, 0, 0, 0},
                 {0, 0, 10, 12, 0, 0},
                 {0, 4, 0, 0, 14, 0},
