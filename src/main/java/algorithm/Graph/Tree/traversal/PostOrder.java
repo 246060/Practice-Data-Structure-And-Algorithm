@@ -1,6 +1,10 @@
-package algorithm.Graph.Tree;
+package algorithm.Graph.Tree.traversal;
 
-public class Tree_Traversal {
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
+public class PostOrder {
 
     static class Node {
         int value;
@@ -15,7 +19,6 @@ public class Tree_Traversal {
     }
 
     public static void main(String[] args) {
-
         System.out.println("""
                        1
                      /   \\
@@ -23,41 +26,15 @@ public class Tree_Traversal {
                  /   \\
                 4     5
                 """);
-
         Node root = new Node(1);
         root.left = new Node(2);
         root.right = new Node(3);
         root.left.left = new Node(4);
         root.left.right = new Node(5);
 
-        System.out.println("InOrder(Left -> Root -> Right) : ");
-        inOrder(root);
-        System.out.println("\n");
-
-        System.out.println("PreOrder(Root -> Left -> Right) : ");
-        preOrder(root);
-        System.out.println("\n");
-
         System.out.println("PostOrder(Left -> Right -> Root) : ");
         postOrder(root);
-    }
-
-    // Left -> Root -> Right
-    static void inOrder(Node node) {
-        if (node == null) return;
-
-        inOrder(node.left);
-        System.out.print(node + " -> ");
-        inOrder(node.right);
-    }
-
-    // Root -> Left -> Right
-    static void preOrder(Node node) {
-        if (node == null) return;
-
-        System.out.print(node + " -> ");
-        preOrder(node.left);
-        preOrder(node.right);
+        System.out.println("\n");
     }
 
     // Left -> Right -> Root
@@ -68,6 +45,4 @@ public class Tree_Traversal {
         postOrder(node.right);
         System.out.print(node + " -> ");
     }
-
-
 }
