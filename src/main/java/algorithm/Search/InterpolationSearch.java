@@ -1,6 +1,5 @@
 package algorithm.Search;
 
-
 /**
  * Interpolation search is an algorithm for searching for a given key in an indexed array that
  * has been ordered by numerical values assigned to the keys (key values). It parallels how humans search
@@ -10,8 +9,6 @@ package algorithm.Search;
  * Average performance         O(log(log(n)))<br>
  * <br>
  * https://en.wikipedia.org/wiki/Interpolation_search
- *
- * @author Justin Wetherell <phishman3579@gmail.com>
  */
 public class InterpolationSearch {
     //https://www.javatips.net/api/java-algorithms-implementation-master/src/com/jwetherell/algorithms/search

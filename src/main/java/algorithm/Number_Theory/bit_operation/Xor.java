@@ -18,5 +18,15 @@ public class Xor {
         System.out.println("A^B=C : " + Integer.toBinaryString(C));
         System.out.println("C^A=B : " + Integer.toBinaryString(C ^ A));
         System.out.println("C^B=A : " + Integer.toBinaryString(C ^ B));
+
+
+        System.out.println("A^0 : " + Integer.toBinaryString(A ^ 0));
+        System.out.println("0^A : " + Integer.toBinaryString(0 ^ A));
+
+
+        System.out.println(true ^ true); // false
+        System.out.println(true ^ false); // true
+        System.out.println(false ^ true); // true
+        System.out.println(false ^ false); // false
     }
 }

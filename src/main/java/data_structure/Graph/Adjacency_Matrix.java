@@ -1,0 +1,31 @@
+package data_structure.Graph;
+
+import java.util.Arrays;
+
+public class Adjacency_Matrix {
+    public static void main(String[] args) {
+
+        final int INF = (int) 1e9; // 도달 할 수 없음 뜻함
+        int N = 3;
+        int[][] graph = new int[N + 1][N + 1];
+
+        for (int source = 0; source < graph.length; source++) {
+            for (int destionation = 0; destionation < graph[source].length; destionation++) {
+
+                if (source == destionation) {
+                    graph[source][destionation] = 0;
+                } else {
+                    graph[source][destionation] = INF;
+                }
+            }
+        }
+
+        graph[1][2] = 4;
+        graph[1][3] = 5;
+        graph[2][3] = 2;
+
+        for (int[] edge : graph) {
+            System.out.println(Arrays.toString(edge));
+        }
+    }
+}

@@ -7,22 +7,16 @@ package algorithm.Search;
  * -If searched element is bigger than any array element function returns first index after last element.
  * Behaviour for unsorted arrays is unspecified.
  * Complexity O(log n).
- *
- * @author Bartlomiej Drozd <mail@bartlomiejdrozd.pl>
- * @author Justin Wetherell <phishman3579@gmail.com>
  */
 public class UpperBound {
     // https://www.javatips.net/api/java-algorithms-implementation-master/src/com/jwetherell/algorithms/search/UpperBound.java
 
-    private UpperBound() { }
-
-    public static int upperBound(int[] array, int length, int value) {
-
+    int upperBound(int[] array, int length, int value) {
         int low = 0;
         int high = length;
 
         while (low < high) {
-            final int mid = (low + high) / 2;
+            int mid = (low + high) / 2;
 
             if (value >= array[mid]) {
                 low = mid + 1;
@@ -30,7 +24,6 @@ public class UpperBound {
                 high = mid;
             }
         }
-
         return low;
     }
 }

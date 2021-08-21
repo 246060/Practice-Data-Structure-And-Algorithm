@@ -1,4 +1,4 @@
-package algorithm.Graph.Tree.traversal;
+package algorithm.Graph.Tree.Traversal;
 
 import java.util.ArrayList;
 

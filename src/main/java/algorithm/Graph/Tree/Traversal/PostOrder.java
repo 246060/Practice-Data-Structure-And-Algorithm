@@ -1,8 +1,4 @@
-package algorithm.Graph.Tree.traversal;
-
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+package algorithm.Graph.Tree.Traversal;
 
 public class PostOrder {
 

@@ -9,21 +9,16 @@ package algorithm.Search;
  * -If there are many values equals searched value function returns first occurrence.
  * Behaviour for unsorted arrays is unspecified.
  * Complexity O(log n).
- *
- * @author Bartlomiej Drozd <mail@bartlomiejdrozd.pl>
- * @author Justin Wetherell <phishman3579@gmail.com>
  */
 public class LowerBound {
     // https://www.javatips.net/api/java-algorithms-implementation-master/src/com/jwetherell/algorithms/search/LowerBound.java
-    private LowerBound() { }
 
-    public static int lowerBound(int[] array, int length, int value) {
-
+    int lowerBound(int[] array, int length, int value) {
         int low = 0;
-        int high = length;
+        int high = length; // note: 배열에 없는 큰수를 찾으려는 시도를 위해 length -1 이 아닌 length로 할당
 
         while (low < high) {
-            final int mid = (low + high) / 2;
+            int mid = (low + high) / 2;
 
             if (value <= array[mid]) {
                 high = mid;

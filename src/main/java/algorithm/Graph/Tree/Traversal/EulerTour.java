@@ -1,6 +1,5 @@
-package algorithm.Graph.Tree.traversal;
+package algorithm.Graph.Tree.Traversal;
 
-import java.sql.Time;
 import java.util.ArrayList;
 import java.util.Stack;
 
@@ -10,6 +9,7 @@ public class EulerTour {
     // https://www.geeksforgeeks.org/euler-tour-binary-tree/
 
     // Root -> Left -> Root -> Right -> Root
+    // 2n-1 nodes in Euler tour of a tree with n nodes
 
     // Time Complexity: O(2*N-1) where N is number of nodes in the tree.
     // Auxiliary Space : O(2*N-1) where N is number of nodes in the tree.

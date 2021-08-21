@@ -13,8 +13,6 @@ package algorithm.Search;
  * Worst-case space complexity O(1)<br>
  * <br>
  * https://en.wikipedia.org/wiki/Binary_search_algorithm
- *
- * @author Justin Wetherell <phishman3579@gmail.com>
  */
 public class BinarySearch {
 
