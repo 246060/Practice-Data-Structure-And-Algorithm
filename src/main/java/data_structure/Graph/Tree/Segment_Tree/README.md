@@ -18,3 +18,4 @@
 - https://codeonwort.tistory.com/331
 - https://java2blog.com/segment-tree-java/
 - https://www.geeksforgeeks.org/segment-tree-set-1-range-minimum-query/
+- https://bowbowbow.tistory.com/4
