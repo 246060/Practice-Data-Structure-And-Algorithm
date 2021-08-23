@@ -18,7 +18,7 @@ public class Binary_Indexed_Tree_Range_Updates_and_Point_Queries {
 
         System.out.println("Element at index " + index + " is " + getSum(index));
 
-        // Add 2 to all the element from [0,3]
+        // Add 4 to all the element from [0,3]
         l = 0;
         r = 3;
         val = 4;
