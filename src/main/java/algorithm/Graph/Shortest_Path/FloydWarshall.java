@@ -49,7 +49,7 @@ public class FloydWarshall {
         for (int k = 1; k < n + 1; k++) {
             for (int i = 1; i < n + 1; i++) {
                 for (int j = 1; j < n + 1; j++) {
-                    // k를 거쳐가면 더 적은 비용인지
+                    // 점화식 : k를 거쳐가면 더 적은 비용인지
                     graph[i][j] = Math.min(graph[i][j], graph[i][k] + graph[k][j]);
                 }
             }

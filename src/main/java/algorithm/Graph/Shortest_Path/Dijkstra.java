@@ -19,10 +19,8 @@ public class Dijkstra {
         }
     }
 
-    static final int INF = (int) 1e9;
-
     public static void main(String[] args) {
-
+        int INF = (int) 1e9;
         int n = 6;
         int[][] edges = {
                 {1, 2, 2},
@@ -50,6 +48,7 @@ public class Dijkstra {
 
         System.out.println("-- 방법 1");
         distance = solution(edges, n, start);
+
         // 0 이 시작 지점
         for (int i = 1; i < distance.length; i++) {
             if (distance[i] == INF) {
@@ -72,10 +71,20 @@ public class Dijkstra {
         }
     }
 
+    /*
+     * edges : 엣지 정보
+     * n : 노드 개수
+     * start : 시작점
+     * */
     static int[] solution2(int[][] edges, int n, int start) {
+        int INF = (int) 1e9;
+        
+        // 최소 거리 정보 초기화
         int[] distance = new int[n + 1];
         Arrays.fill(distance, INF);
+        distance[start] = 0; // 시작 지점은 0
 
+        // 인접 메트릭스로 그래프 표현
         int[][] graph = new int[n + 1][n + 1];
         for (int v = 0; v < graph.length; v++)
             Arrays.fill(graph[v], INF);
@@ -88,8 +97,9 @@ public class Dijkstra {
         }
 
         PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparing(o -> o[1]));
-        pq.offer(new int[]{start, 0}); // 시작점 큐에 추가
-        distance[start] = 0; // 시작 지점은 0
+
+        // int[]{ 노드, 노드까지 가는 최소 비용 }
+        pq.offer(new int[]{start, distance[start]}); // 시작점 큐에 추가
 
         // 'start' 에서 모든 지점의 최단 거리를 구함
         while (!pq.isEmpty()) {
@@ -101,11 +111,14 @@ public class Dijkstra {
                 continue;
 
             for (int adj = 1; adj <= n; adj++) {
-                // 예외 처리
+                // 예외 처리 : 자기자신과 인접 하지 않는 노드 제외
                 if (now == adj || graph[now][adj] == INF)
                     continue;
 
+                // 현재까지의 최단거리 비용 + 인접한 노드의 추가 거리 비용
                 int cost = distance[now] + graph[now][adj];
+                
+                // 현재 노드를 거친 인접 노드 거리 비용 vs 인접 노드 distance 테이블의 값
                 if (cost < distance[adj]) {
                     distance[adj] = cost;
                     pq.offer(new int[]{adj, cost});
@@ -116,11 +129,18 @@ public class Dijkstra {
         return distance;
     }
 
-    static int[] solution(int[][] edges, int n, int start) {
 
+    /*
+     * edges : 엣지 정보
+     * n : 노드 개수
+     * start : 시작점
+     * */
+    static int[] solution(int[][] edges, int n, int start) {
+        int INF = (int) 1e9;
         int[] distance = new int[n + 1];
         Arrays.fill(distance, INF);
 
+        // 리스트로 그래프 표현
         ArrayList<ArrayList<Node>> graph = new ArrayList<>();
         for (int i = 0; i <= n; i++)
             graph.add(new ArrayList<>());

@@ -90,22 +90,23 @@ public class MinimumSpanningTree {
 
         boolean[] visited = new boolean[n];
         PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(o -> o[2]));
-
         Queue<Integer> q = new LinkedList<>();
+
+        // 시작점 초기화
         q.offer(edges.get(0)[0]);
 
         while (!q.isEmpty()) {
             int cur = q.poll();
             visited[cur] = true;
 
+            // 현재 vertex에서 인접한 노드중 방문하지 않은 노드를 우선순위 큐에 넣음.
             for (int[] edge : edges) {
-                if (cur != edge[0])
-                    continue;
-
-                if (!visited[edge[1]])
+                if (cur == edge[0] && !visited[edge[1]]) {
                     pq.offer(edge);
+                }
             }
 
+            // 인접한 노드 중에 비용이 가장 작은 노드 처리
             while (!pq.isEmpty()) {
                 int[] edge = pq.poll();
 
