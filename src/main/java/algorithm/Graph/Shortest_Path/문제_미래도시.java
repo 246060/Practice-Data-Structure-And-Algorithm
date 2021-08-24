@@ -25,8 +25,10 @@ import java.util.Arrays;
  * 4 5
  *
  * # 출력 예시
+ * 3
  * */
 public class 문제_미래도시 {
+
     public static void main(String[] args) {
         int N = 5, M = 7;
         int[][] edges = {
