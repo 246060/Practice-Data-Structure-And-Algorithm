@@ -8,11 +8,13 @@ https://www.youtube.com/watch?v=uGf7dUYCsj4
 - 그래프를 SCC로 만들면 그래프내의 사이클이 없는 것처럼 다루게 되어, 위상정렬이 가능해진다.
 - 강한 연결 요소는 정점 하나를 제거해도 연결은 유지된다.
   
-- 강하게 결합된 정점들의 집합 = SCC 집합 cf. 강하게 결합되었다는 의미 : 두 노드가 서로한테 갈 수 있는 경우 서로 긴밀하게(강하게) 연결되어있다고 말함
+- 강하게 결합된 정점들의 집합 = SCC 집합   
+  - cf. 강하게 결합되었다는 의미 : 두 노드가 서로한테 갈 수 있는 경우 서로 긴밀하게(강하게) 연결되어있다고 말함
 
 - 같은 강한 결합 요소 안에 속한 노드들은 서로가 서로한테 도착할 수 있는 특징을 가짐
 
-- 방향그래프이고 사이클이 존재하는 경우에 강한 결합 요소가 나타남. 만약, 무향 그래프라면 그래프 전체가 무조건 강한 결합 요소이므로 의미가 없음
+- 방향그래프이고 사이클이 존재하는 경우에 강한 결합 요소가 나타남.  
+  - 만약, 무향 그래프라면 그래프 전체가 무조건 강한 결합 요소이므로 의미가 없음
 
 ![img](https://lh3.googleusercontent.com/proxy/wtCXbclcm2YzSXVua4AU_eWLZ29gBkmgPUXGdwVfUOH7LAHZiyYXP9X4uwEAuQX8HoCrc5To5szUh_U9s9GtWD-BCaT3YQKGhVuE6wRu33ckbgXxwmv47zBCgBRFAbnNVI48gLmJfQSSGMCdkYI5-gQsD74)
 

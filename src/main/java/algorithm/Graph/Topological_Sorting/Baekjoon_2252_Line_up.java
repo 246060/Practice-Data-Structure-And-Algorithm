@@ -22,12 +22,13 @@ public class Baekjoon_2252_Line_up {
         for (int i = 0; i < m; i++) {
             int cur = sc.nextInt();
             int adjacent = sc.nextInt();
+
             nodes.get(cur).add(adjacent);
             inDegree[adjacent]++;
         }
 
+        // 진입 차수가 0 인 것을 큐에 넣음.
         Queue<Integer> q = new LinkedList<>();
-
         for (int i = 1; i <= n; i++) {
             if (inDegree[i] == 0) {
                 q.offer(i);

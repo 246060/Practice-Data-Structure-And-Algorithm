@@ -63,14 +63,19 @@ public class LRUCache {
     }
 
     public void deleteNode(Node node) {
+        // 함수 파라미터 node 옆을 바로 연결해준다.
         node.pre.next = node.next;
         node.next.pre = node.pre;
     }
 
     public void addToHead(Node node) {
+        // head 다음으로 node를 추가
+
+        // 기존의 첫번째를 신규 node의 뒤로 만들다.
         node.next = head.next;
         node.next.pre = node;
 
+        // head와도 연결해준다.
         node.pre = head;
         head.next = node;
     }
