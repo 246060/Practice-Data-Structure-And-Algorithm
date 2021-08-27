@@ -1,6 +1,13 @@
 
 - https://github.com/williamfiset/Algorithms/blob/master/src/main/java/com/williamfiset/algorithms/graphtheory/treealgorithms/LowestCommonAncestorEulerTour.java
 
+## LCA 해결방법
+LCA는 여러가지 해결 방법이 존재한다.
+1. 선행적으로 높이를 맞추는 심플한 방법
+2. sparse table의 bitmask를 이용한 높이는 맞추는 방법
+3. 높이를 기준으로 한 RMQ 구현한 세그먼트 트리.
+ 
+
 
 # RMQ(Range Minimum Query)을 이용한 LCA
 

@@ -243,7 +243,5 @@ public class LCA_in_a_Binary_Tree_Set_1 {
 
             return false;
         }
-
-
     }
 }

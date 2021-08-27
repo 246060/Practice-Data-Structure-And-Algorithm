@@ -43,4 +43,44 @@ public class Trie {
     public boolean startWith(String prefix) {
         return getNode(prefix) != null;
     }
+
+    // https://www.baeldung.com/trie-java#3-deleting-an-element
+    public void delete(String word) {
+        delete(root, word, 0);
+    }
+
+    private boolean delete(Node cur, String word, int index) {
+
+        // end of word
+        if (index == word.length()) {
+            if (cur.isWord) {
+                cur.isWord = false;
+                return cur.children.isEmpty();
+            } else {
+                return false;
+            }
+        }
+
+        String s = String.valueOf(word.charAt(index));
+        Node next = cur.children.get(s);
+        if (next == null) {
+            return false;
+        }
+
+        // Recursive DFS
+        boolean canDelete
+                // 현재 인덱스 글자의 하위 컨테이너가 비워졌는지
+                = delete(next, word, index + 1)
+
+                // 현재 인덱스 글자가 단어의 끝인지.
+                && !next.isWord;
+
+
+        if (canDelete) {
+            cur.children.remove(s);
+            return cur.children.isEmpty();
+        }
+
+        return false;
+    }
 }

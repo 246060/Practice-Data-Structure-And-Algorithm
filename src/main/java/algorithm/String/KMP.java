@@ -64,6 +64,7 @@ public class KMP {
                 // This is tricky. Consider the example.
                 // AAACAAAA and i = 7. The idea is similar to search step.
                 if (len != 0) {
+                    // len 이 0이 아니면 시작 위치를 계속 내린다.
                     len = lps[len - 1];
 
                     // Also, note that we do not increment i here
