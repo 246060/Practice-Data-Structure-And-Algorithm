@@ -23,12 +23,13 @@ public class LowerBound {
     // 특정 값보다 같거나 큰 값이 처음 나오는 위치
     int lowerBound(int[] array, int length, int value) {
         int low = 0;
-        int high = length; // note: 배열에 없는 큰수를 찾으려는 시도를 위해 length -1 이 아닌 length로 할당
+        int high = length;
+        // note: 배열에 없는 큰수를 찾으려는 시도를 위해 length -1 이 아닌 length로 할당
 
         while (low < high) {
             int mid = (low + high) / 2;
 
-            if (value <= array[mid]) {
+            if (array[mid] >= value) {
                 // 찾은 값이 같거나 더 크면 high를 mid로 down 시킨다.
                 high = mid;
             } else {

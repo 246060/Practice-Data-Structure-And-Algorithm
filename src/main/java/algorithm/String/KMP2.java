@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class KMP2 {
 
+    // https://coding-food-court.tistory.com/220
     public static void main(String[] args) {
 
         String txt = "ababacabacaabacaaba";
