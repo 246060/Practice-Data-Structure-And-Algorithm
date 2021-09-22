@@ -10,12 +10,12 @@ public class Adjacency_Matrix {
         int[][] graph = new int[N + 1][N + 1];
 
         for (int source = 0; source < graph.length; source++) {
-            for (int destionation = 0; destionation < graph[source].length; destionation++) {
+            for (int dest = 0; dest < graph[source].length; dest++) {
 
-                if (source == destionation) {
-                    graph[source][destionation] = 0;
+                if (source == dest) {
+                    graph[source][dest] = 0;
                 } else {
-                    graph[source][destionation] = INF;
+                    graph[source][dest] = INF;
                 }
             }
         }

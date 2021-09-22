@@ -96,16 +96,15 @@ public class Binary_Indexed_Tree_Range_Update_and_Range_Queries {
         return sum(r, BITTree1, BITTree2) - sum(l - 1, BITTree1, BITTree2);
     }
 
-
     static int[] constructBITree(int n) {
 
         // Create and initialize BITree[] as 0
         int[] BITree = new int[n + 1];
+
         for (int i = 1; i <= n; i++)
             BITree[i] = 0;
 
         return BITree;
     }
-
 
 }

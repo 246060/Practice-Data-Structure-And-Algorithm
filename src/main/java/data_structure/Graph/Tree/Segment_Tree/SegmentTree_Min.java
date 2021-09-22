@@ -1,21 +1,13 @@
 package data_structure.Graph.Tree.Segment_Tree;
 
-import java.io.OutputStream;
-
 public class SegmentTree_Min {
 
-    static int[] a = {
-            1, 9, 3, 8, 4,
-            5, 5, 9, 10, 3,
-            4, 5
-    };
+    static int[] a = {1, 9, 3, 8, 4, 5, 5, 9, 10, 3, 4, 5};
     static int[] tree;
 
     public static void main(String[] args) {
+
         int pos = 2;
-        System.out.println(Integer.toBinaryString(pos));
-        System.out.println(pos >> 5);
-        System.out.println(Integer.toBinaryString(pos));
         tree = new int[a.length * 4];
         build();
 
@@ -26,6 +18,7 @@ public class SegmentTree_Min {
         System.out.println("2 부터 4까지 중 min : " + query(2, 4));
 
         update(2, -1);
+
         System.out.println("첫 부터 끝까지 중 min : " + query(0, a.length - 1));
         System.out.println("10 부터 11까지 중 min : " + query(10, 11));
         System.out.println("8 부터 9까지 중 min : " + query(8, 9));
@@ -64,6 +57,7 @@ public class SegmentTree_Min {
         }
 
         int mid = (start + end) / 2;
+
         return tree[node] = Math.min(
                 build(start, mid, node * 2),
                 build(mid + 1, end, node * 2 + 1)

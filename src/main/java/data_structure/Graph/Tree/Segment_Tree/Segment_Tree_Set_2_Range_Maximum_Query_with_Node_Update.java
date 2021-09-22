@@ -64,7 +64,7 @@ public class Segment_Tree_Set_2_Range_Maximum_Query_with_Node_Update {
             return;
         }
 
-        if (ss == se) {
+        if (ss == se) { // arrived at leaf node
             // update value in array and in segment tree
             arr[index] = value;
             st[node] = value;

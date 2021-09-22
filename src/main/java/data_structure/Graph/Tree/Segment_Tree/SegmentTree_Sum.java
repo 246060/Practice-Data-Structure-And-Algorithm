@@ -44,7 +44,6 @@ public class SegmentTree_Sum {
             return tree[node];
 
         int mid = (start + end) / 2;
-
         return query(start, mid, node * 2, left, right)
                 + query(mid + 1, end, node * 2 + 1, left, right);
     }
@@ -60,11 +59,9 @@ public class SegmentTree_Sum {
         }
 
         tree[node] += dif;
-
         if (start == end) return;
 
         int mid = (start + end) / 2;
-
         update(start, mid, node * 2, index, dif);
         update(mid + 1, end, node * 2 + 1, index, dif);
     }

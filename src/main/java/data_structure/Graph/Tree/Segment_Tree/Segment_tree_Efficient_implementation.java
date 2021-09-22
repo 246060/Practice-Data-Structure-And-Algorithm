@@ -5,10 +5,9 @@ public class Segment_tree_Efficient_implementation {
     // // https://www.youtube.com/watch?v=Oq2E2yGadnU
 
     // Time Complexities:
-    //
-    // Tree Construction : O(n)
-    // Query in Range : O(Log n )
-    // Updating an element : O( Log n ).
+    //      Tree Construction   : O(n)
+    //      Query in Range      : O(Log n)
+    //      Updating an element : O(Log n)
 
     //  interval [L,R) with left index(L) included and right (R) excluded.
 
@@ -48,7 +47,6 @@ public class Segment_tree_Efficient_implementation {
         // build the tree by calculating parents
         for (int i = n - 1; i > 0; --i)
             tree[i] = tree[i << 1] + tree[i << 1 | 1]; // | : Or
-        // tree[i]=tree[2*i]+tree[2*i+1]
     }
 
     // function to update a tree node

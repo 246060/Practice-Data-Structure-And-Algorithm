@@ -56,10 +56,10 @@ public class Segment_Tree_Set_1_Sum_of_given_range {
         // Case 3 : If a part of this segment overlaps with the given range
         int mid = getMid(ss, se);
 
-        int left = getSumUtil(ss, mid, qs, qe, 2 * si + 1);
-        int right = getSumUtil(mid + 1, se, qs, qe, 2 * si + 2);
+        int leftSum = getSumUtil(ss, mid, qs, qe, 2 * si + 1);
+        int rightSum = getSumUtil(mid + 1, se, qs, qe, 2 * si + 2);
 
-        return left + right;
+        return leftSum + rightSum;
     }
 
     /*

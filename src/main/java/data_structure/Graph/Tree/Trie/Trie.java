@@ -13,15 +13,19 @@ public class Trie {
 
     public void insert(String word) {
         Node cur = root;
+
         for (String split : word.split("")) {
+
             if (cur.children.containsKey(split)) {
                 cur = cur.children.get(split);
                 continue;
             }
+
             Node nextNode = new Node();
             cur.children.put(split, nextNode);
             cur = nextNode;
         }
+
         cur.isWord = true;
     }
 
@@ -32,11 +36,15 @@ public class Trie {
 
     private Node getNode(String word) {
         Node cur = this.root;
+
         for (String s : word.split("")) {
+
             if (!cur.children.containsKey(s))
                 return null;
+
             cur = cur.children.get(s);
         }
+
         return cur;
     }
 
@@ -74,7 +82,6 @@ public class Trie {
 
                 // 현재 인덱스 글자가 단어의 끝인지.
                 && !next.isWord;
-
 
         if (canDelete) {
             cur.children.remove(s);

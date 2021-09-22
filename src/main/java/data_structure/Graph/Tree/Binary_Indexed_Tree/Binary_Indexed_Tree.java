@@ -10,26 +10,24 @@ public class Binary_Indexed_Tree {
         int[] a = {1, 2, 3, 4, 5};
         tree = new int[a.length + 1];
 
-        for (int i = 0; i < a.length; i++) {
+        for (int i = 0; i < a.length; i++)
             update(i, a[i]);
-        }
 
         System.out.println(sum(1, 4));
         update(2, -2);
 
         System.out.println(sum(1, 4));
-
         update(4, 2);
 
         System.out.println(sum(1, 4));
         System.out.println(sum(0, 4));
     }
 
-    static void update(int targetIndex, int val) {
-        targetIndex++;
-        while (targetIndex < tree.length) {
-            tree[targetIndex] += val;
-            targetIndex += (targetIndex & -targetIndex);
+    static void update(int i, int val) {
+        i++;
+        while (i < tree.length) {
+            tree[i] += val;
+            i += (i & -i);
         }
     }
 

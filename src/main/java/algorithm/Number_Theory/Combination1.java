@@ -4,15 +4,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Combination {
+public class Combination1 {
     public static void main(String[] args) {
 
         int n = 5;
-        for (int i = 0; i <= n; i++) {
-            List<int[]> list = generate(5, i);
-            for (int[] ints : list) {
-                System.out.println(Arrays.toString(ints));
-            }
+        List<int[]> list = generate(11, 3);
+        for (int[] ints : list) {
+            System.out.println(Arrays.toString(ints));
         }
 
     }
