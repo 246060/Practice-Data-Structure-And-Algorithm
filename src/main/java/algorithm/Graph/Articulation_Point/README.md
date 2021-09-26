@@ -1,4 +1,4 @@
-# Articulation Point
+# Articulation Point(AP)
 
 하나의 컴포넌트로 구성된 무방향 그래프에서 특정 정점을 제거 했을때 
 두 개 이상의 컴포넌트(그래프)로 나눌 수 있는 그러한 정점 찾는 문제
