@@ -1,6 +1,5 @@
-package Baekjoon.simulation;
+package Coding_Test.Baekjoon.simulation;
 
-import javax.swing.*;
 import java.util.Scanner;
 
 public class 아이_러브_크로아티아 {

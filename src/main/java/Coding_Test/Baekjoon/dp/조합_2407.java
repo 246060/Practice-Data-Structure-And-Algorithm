@@ -1,4 +1,4 @@
-package Baekjoon.dp;
+package Coding_Test.Baekjoon.dp;
 
 import java.math.BigInteger;
 import java.util.Scanner;
