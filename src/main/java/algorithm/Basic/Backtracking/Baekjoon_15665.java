@@ -1,4 +1,4 @@
-package algorithm.Backtracking;
+package algorithm.Basic.Backtracking;
 
 import java.io.*;
 import java.util.*;

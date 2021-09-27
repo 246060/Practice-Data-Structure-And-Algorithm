@@ -1,45 +1,42 @@
-package algorithm.Backtracking;
+package algorithm.Basic.Backtracking;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
 
-public class Baekjoon_15654 {
+public class Baekjoon_15649 {
 
     static int[] arr;
     static int N;
     static int M;
-    static StringBuilder sb = new StringBuilder();
 
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
+        // Scanner sc = new Scanner(System.in);
+        // N = sc.nextInt();
+        // M = sc.nextInt();
 
-        Scanner sc = new Scanner(System.in);
-        N = sc.nextInt();
-        M = sc.nextInt();
+        N = 4;
+        M = 2;
 
         arr = new int[N + 1];
         for (int i = 1; i < arr.length; i++)
-            arr[i] = sc.nextInt();
-
-        Arrays.sort(arr);
+            arr[i] = i;
 
         backtracking(new ArrayList<>());
-        System.out.println(sb);
     }
 
     static void backtracking(ArrayList<Integer> result) {
         if (result.size() == M) {
+            StringBuilder sb = new StringBuilder();
             for (int o : result)
                 sb.append(o).append(" ");
-            sb.append("\n");
+            System.out.println(sb);
             return;
         }
 
         for (int i = 1; i < arr.length; i++) {
-            if (result.contains(arr[i])) {
+            if (result.contains(i))
                 continue;
-            }
-            result.add(arr[i]);
+
+            result.add(i);
             backtracking(result);
             result.remove(result.size() - 1);
         }

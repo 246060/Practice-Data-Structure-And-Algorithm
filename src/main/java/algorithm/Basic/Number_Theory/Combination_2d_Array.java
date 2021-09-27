@@ -1,4 +1,4 @@
-package algorithm.Number_Theory;
+package algorithm.Basic.Number_Theory;
 
 /**
  * 2차원 배열에서 조합을 구할때 사용하는 방법
