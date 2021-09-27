@@ -1,4 +1,4 @@
-package algorithm.Graph.baekjoon;
+package Coding_Test.Baekjoon.graph;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

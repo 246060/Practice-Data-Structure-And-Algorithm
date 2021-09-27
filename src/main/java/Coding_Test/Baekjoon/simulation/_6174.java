@@ -1,4 +1,4 @@
-package Baekjoon.simulation;
+package Coding_Test.Baekjoon.simulation;
 
 import java.util.Arrays;
 import java.util.Scanner;

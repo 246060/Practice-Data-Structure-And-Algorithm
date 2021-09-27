@@ -1,4 +1,4 @@
-package algorithm.Number_Theory.bit_operation;
+package algorithm.Basic.Number_Theory.bit_operation;
 
 public class And {
 

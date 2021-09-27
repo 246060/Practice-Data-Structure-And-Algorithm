@@ -1,4 +1,4 @@
-package algorithm.Greedy;
+package algorithm.Basic.Greedy;
 
 public class Baekjoon_2839 {
 
