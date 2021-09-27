@@ -91,6 +91,7 @@ public class Kosaraju {
             if (!visited[adj])
                 dfs(adj);
 
+        // post order
         stack.push(v);
     }
 }
