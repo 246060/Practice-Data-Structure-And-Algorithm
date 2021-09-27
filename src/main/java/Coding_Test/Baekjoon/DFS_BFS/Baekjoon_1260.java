@@ -1,4 +1,4 @@
-package algorithm.Graph.DFS_BFS;
+package Coding_Test.Baekjoon.DFS_BFS;
 
 import java.util.*;
 import java.util.stream.Collectors;

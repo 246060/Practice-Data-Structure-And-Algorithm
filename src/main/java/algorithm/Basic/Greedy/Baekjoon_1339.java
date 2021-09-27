@@ -1,4 +1,4 @@
-package algorithm.Greedy;
+package algorithm.Basic.Greedy;
 
 import java.util.HashMap;
 import java.util.PriorityQueue;
