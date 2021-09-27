@@ -1,4 +1,4 @@
-package Baekjoon.dp.LIS;
+package Coding_Test.Baekjoon.dp.LIS;
 
 import java.util.Scanner;
 
