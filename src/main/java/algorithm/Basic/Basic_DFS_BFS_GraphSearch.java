@@ -1,4 +1,4 @@
-package algorithm.Graph;
+package algorithm.Basic;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

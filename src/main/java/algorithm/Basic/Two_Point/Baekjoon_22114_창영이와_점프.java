@@ -1,4 +1,4 @@
-package algorithm.Two_Point;
+package algorithm.Basic.Two_Point;
 
 import java.util.Scanner;
 

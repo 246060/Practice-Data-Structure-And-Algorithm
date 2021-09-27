@@ -1,13 +1,15 @@
-package algorithm.Backtracking;
+package algorithm.Basic.Backtracking;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
 
-public class Baekjoon_15663 {
+public class Baekjoon_15656 {
 
     static int[] arr;
     static int N;
     static int M;
-    static LinkedHashSet<String> ans = new LinkedHashSet<>();
+    static StringBuilder sb = new StringBuilder();
 
     public static void main(String[] args) {
 
@@ -20,26 +22,22 @@ public class Baekjoon_15663 {
             arr[i] = sc.nextInt();
 
         Arrays.sort(arr);
-        backtracking(new ArrayList<>());
 
-        ans.forEach(System.out::println);
+        backtracking(1, new ArrayList<>());
+        System.out.println(sb);
     }
 
-    static void backtracking(ArrayList<Integer> result) {
+    static void backtracking(int level, ArrayList<Integer> result) {
         if (result.size() == M) {
-            StringBuilder sb = new StringBuilder();
             for (int o : result)
-                sb.append(arr[o]).append(" ");
-            ans.add(sb.toString());
+                sb.append(o).append(" ");
+            sb.append("\n");
             return;
         }
 
         for (int i = 1; i < arr.length; i++) {
-            if (result.contains(i))
-                continue;
-
-            result.add(i);
-            backtracking(result);
+            result.add(arr[i]);
+            backtracking(i, result);
             result.remove(result.size() - 1);
         }
     }

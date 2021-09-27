@@ -1,10 +1,10 @@
-package algorithm.Backtracking;
+package algorithm.Basic.Backtracking;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Baekjoon_15656 {
+public class Baekjoon_15655 {
 
     static int[] arr;
     static int N;
@@ -35,9 +35,12 @@ public class Baekjoon_15656 {
             return;
         }
 
-        for (int i = 1; i < arr.length; i++) {
+        for (int i = level; i < arr.length; i++) {
+            if (result.contains(arr[i])) {
+                continue;
+            }
             result.add(arr[i]);
-            backtracking(i, result);
+            backtracking(i + 1, result);
             result.remove(result.size() - 1);
         }
     }

@@ -1,4 +1,4 @@
-package algorithm.Number_Theory;
+package algorithm.Basic.Number_Theory;
 
 public class Combination2 {
     public static void main(String[] args) {
