@@ -2,36 +2,71 @@ package algorithm.Graph.Flow_Network.Ford_Fulkerson;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Scanner;
 import java.util.Stack;
 
 public class Ford_Fulkerson {
     // https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/
 
+/*
+6 10
+0 1 14
+0 3 18
+1 2 15
+1 3 12
+2 4 9
+2 5 6
+3 1 6
+3 4 16
+4 1 11
+4 5 28
+
+4 5
+0 1 100
+0 2 100
+1 2 1
+2 3 100
+1 3 100
+*/
+    // Number of vertices in graph
+    static int V;
+    static int run_count = 0;
+
     // Driver program to test above functions
     public static void main(String[] args) throws java.lang.Exception {
 
         // Let us create a graph shown in the above example
-        int[][] graph = new int[][]{
-                {0, 16, 13, 0, 0, 0},
-                {0, 0, 10, 12, 0, 0},
-                {0, 4, 0, 0, 14, 0},
-                {0, 0, 9, 0, 0, 20},
-                {0, 0, 0, 7, 0, 4},
-                {0, 0, 0, 0, 0, 0}
-        };
+//        int[][] graph = new int[][]{
+//                {0, 16, 13, 0, 0, 0},
+//                {0, 0, 10, 12, 0, 0},
+//                {0, 4, 0, 0, 14, 0},
+//                {0, 0, 9, 0, 0, 20},
+//                {0, 0, 0, 7, 0, 4},
+//                {0, 0, 0, 0, 0, 0}
+//        };
+//        V = 6;
+//        Ford_Fulkerson m = new Ford_Fulkerson();
+//        System.out.println("The maximum possible flow is " + m.fordFulkerson(graph, 0, 5));
 
-        Ford_Fulkerson m = new Ford_Fulkerson();
-        System.out.println("The maximum possible flow is " + m.fordFulkerson(graph, 0, 5));
+        Scanner sc = new Scanner(System.in);
+        V = sc.nextInt();
+        int m = sc.nextInt();
+        int[][] graph = new int[V][V];
+
+        while (m-- > 0) {
+            graph[sc.nextInt()][sc.nextInt()] = sc.nextInt();
+        }
+
+        Ford_Fulkerson ff = new Ford_Fulkerson();
+        System.out.println("The maximum possible flow is " + ff.fordFulkerson(graph, 0, V - 1));
+        System.out.println("실행 횟수: " + run_count);
     }
-
-    // Number of vertices in graph
-    static final int V = 6;
 
     boolean dfs(int[][] rGraph, int s, int t, int[] parent) {
 
         boolean[] visited = new boolean[V];
-
         Stack<Integer> stack = new Stack<>();
+
         stack.push(s);
         visited[s] = true;
         parent[s] = -1;
@@ -41,19 +76,16 @@ public class Ford_Fulkerson {
 
             for (int v = 0; v < V; v++) {
                 if (visited[v] == false && rGraph[u][v] > 0) {
-
                     if (v == t) {
                         parent[v] = u;
                         return true;
                     }
-
                     stack.push(v);
                     parent[v] = u;
                     visited[v] = true;
                 }
             }
         }
-
         return false;
     }
 
@@ -123,15 +155,23 @@ public class Ford_Fulkerson {
         // Augment the flow while tere is path from source to sink
         // while (bfs(rGraph, s, t, parent)) {
         while (dfs(rGraph, s, t, parent)) {
+            run_count++;
 
             // Find minimum residual capacity of the edhes along the path filled by BFS.
             // Or we can say find the maximum flow through the path found.
             int path_flow = Integer.MAX_VALUE;
 
+            StringBuilder sb = new StringBuilder();
+            sb.append(t + " ");
+
             for (v = t; v != s; v = parent[v]) {
                 u = parent[v];
+                sb.append(u + " ");
+
                 path_flow = Math.min(path_flow, rGraph[u][v]);
             }
+
+            System.out.println(sb.reverse().toString().trim());
 
             // update residual capacities of the edges and reverse edges along the path
             for (v = t; v != s; v = parent[v]) {

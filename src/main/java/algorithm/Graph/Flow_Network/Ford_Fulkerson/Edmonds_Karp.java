@@ -1,6 +1,7 @@
 package algorithm.Graph.Flow_Network.Ford_Fulkerson;
 
 import java.util.ArrayDeque;
+import java.util.Arrays;
 import java.util.Queue;
 
 /**
@@ -9,6 +10,7 @@ import java.util.Queue;
  * <p>
  * http://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm
  * <br>
+ *
  * @author Mateusz Cianciara <e.cianciara@gmail.com>
  * @author Justin Wetherell <phishman3579@gmail.com>
  */
@@ -45,54 +47,42 @@ public class Edmonds_Karp {
      */
     public long getMaxFlow(int s, int t) {
 
+        int max_flow = 0;
+
         while (true) {
-            final Queue<Integer> Q = new ArrayDeque<>();
-            Q.add(s);
+            Queue<Integer> Q = new ArrayDeque<>();
+            Q.offer(s);
 
-            for (int i = 0; i < this.n; ++i)
-                visited[i] = false;
-
+            Arrays.fill(visited, false);
             visited[s] = true;
-            boolean check = false;
-            int current;
 
             while (!Q.isEmpty()) {
-                current = Q.peek();
-
-                if (current == t) {
-                    check = true;
-                    break;
-                }
-
-                Q.remove();
-
+                int current = Q.poll();
                 for (int i = 0; i < n; ++i) {
                     if (!visited[i] && capacity[current][i] > flow[current][i]) {
                         visited[i] = true;
-                        Q.add(i);
                         parent[i] = current;
+                        Q.offer(i);
                     }
                 }
+                if (visited[t]) break;
             }
 
-            if (check == false)
-                break;
+            if (!visited[t]) break;
 
-            long temp = capacity[parent[t]][t] - flow[parent[t]][t];
-
-            for (int i = t; i != s; i = parent[i])
+            long temp = Long.MAX_VALUE;
+            for (int i = t; i != s; i = parent[i]) {
                 temp = Math.min(temp, (capacity[parent[i]][i] - flow[parent[i]][i]));
+            }
 
             for (int i = t; i != s; i = parent[i]) {
                 flow[parent[i]][i] += temp;
                 flow[i][parent[i]] -= temp;
             }
+
+            max_flow += temp;
         }
 
-        long result = 0;
-        for (int i = 0; i < n; ++i)
-            result += flow[s][i];
-
-        return result;
+        return max_flow;
     }
 }

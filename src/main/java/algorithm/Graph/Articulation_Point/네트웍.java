@@ -67,8 +67,7 @@ public class 네트웍 {
                         ++child;
 
                     int x = AP(i);
-                    if (mn > x)
-                        mn = x;
+                    mn = Math.min(mn, x);
 
                     if (x >= check[s] && s != start && !ap[s]) {
                         ap[s] = true;

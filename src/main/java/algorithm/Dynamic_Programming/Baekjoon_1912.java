@@ -9,7 +9,8 @@ public class Baekjoon_1912 {
         int n = sc.nextInt();
 
         int[] nums = new int[n];
-        for (int i = 0; i < n; i++) nums[i] = sc.nextInt();
+        for (int i = 0; i < n; i++)
+            nums[i] = sc.nextInt();
 
         int[] dp = new int[n];
         dp[0] = nums[0];

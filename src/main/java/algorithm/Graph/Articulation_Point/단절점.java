@@ -1,4 +1,4 @@
-package algorithm.Graph.Articulation_Point.baekjoon;
+package algorithm.Graph.Articulation_Point;
 
 import java.util.Scanner;
 

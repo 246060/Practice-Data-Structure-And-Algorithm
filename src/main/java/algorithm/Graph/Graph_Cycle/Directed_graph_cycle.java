@@ -41,7 +41,7 @@ public class Directed_graph_cycle {
         }
     }
 
-    static boolean dfs(int s) {
+    static void dfs(int s) {
         // 몇 번째 방문인지 기록
         check[s] = ++order;
 
@@ -59,7 +59,6 @@ public class Directed_graph_cycle {
 
         // 해당 노드의 함수 호출이 종료되었음을 기록
         finished[s] = true;
-        return false;
     }
 
     static void trace(int s, int adj) {
