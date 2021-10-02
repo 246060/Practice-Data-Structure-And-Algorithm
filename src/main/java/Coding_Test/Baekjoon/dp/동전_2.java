@@ -3,8 +3,13 @@ package Coding_Test.Baekjoon.dp;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class 동전_2 {
-
+public class 동전_2 { // 사용한 동전의 최소 개수를 출력
+/*
+3 15
+1
+5
+12
+*/
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

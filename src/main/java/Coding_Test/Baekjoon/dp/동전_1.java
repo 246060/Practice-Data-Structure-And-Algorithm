@@ -2,8 +2,13 @@ package Coding_Test.Baekjoon.dp;
 
 import java.util.Scanner;
 
-public class 동전_1 {
-
+public class 동전_1 { // 경우의 수를 출력
+/*
+3 10
+1
+2
+5
+*/
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
