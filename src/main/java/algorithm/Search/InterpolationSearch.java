@@ -19,12 +19,12 @@ public class InterpolationSearch {
     // Assuming the array is sorted
     public static final int find(int value, int[] array) {
 
-        InterpolationSearch.sorted = array;
+        sorted = array;
 
         try {
-            return recursiveFind(value, 0, InterpolationSearch.sorted.length - 1);
+            return recursiveFind(value, 0, sorted.length - 1);
         } finally {
-            InterpolationSearch.sorted = null;
+            sorted = null;
         }
     }
 
@@ -32,7 +32,6 @@ public class InterpolationSearch {
 
         if (start == end) {
             int lastValue = sorted[start]; // start==end
-
             if (value == lastValue)
                 return start; // start==end
 

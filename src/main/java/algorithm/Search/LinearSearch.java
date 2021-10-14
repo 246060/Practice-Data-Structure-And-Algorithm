@@ -14,7 +14,7 @@ package algorithm.Search;
 public class LinearSearch {
     // https://www.javatips.net/api/java-algorithms-implementation-master/src/com/jwetherell/algorithms/search/LinearSearch.java
 
-    int find(int value, int[] array) {
+    static int find(int value, int[] array) {
         for (int i = 0; i < array.length; i++) {
             if (value == array[i])
                 return i;
