@@ -1,10 +1,10 @@
-
+# Index
 index 작성중...
    
 아래 항목을 시간이 날때마다 개념 정리와 예제 코드를 작성해나간다.   
 아이고... 언제 할꼬...   
     
-# Algorithm
+## Algorithm
 
 sort
   - bubble sort
@@ -97,7 +97,7 @@ Range minimum query
   
 
 
-# Data structure 
+## Data structure 
 Array
   - 일반
   - 원형
