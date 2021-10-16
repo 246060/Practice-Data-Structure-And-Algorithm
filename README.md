@@ -3,7 +3,10 @@ index 작성중...
    
 아래 항목을 시간이 날때마다 개념 정리와 예제 코드를 작성해나간다.   
 아이고... 언제 할꼬...   
-    
+
+<br/>
+<br/>
+
 ## Algorithm
 
 ---
@@ -130,7 +133,7 @@ index 작성중...
 ---
 ### Longest Common Prefix array (LCP)
 
-
+---
 ### Range Query
   - Native approach
   - Square root decomposition
@@ -138,42 +141,44 @@ index 작성중...
   - Fenwick tree
   - Sparse table
   - Cartesian tree
-  
-#
-#
-#
-#
+
+<br/>
+<br/>
+<br/>
+<br/>
+
 ## Data structure 
-#
-Array
+
+### Array
   - 일반
   - 원형
   - Dynamic Array
 
 ---
-LinkedList
+### LinkedList
   - 단순
   - 이중
   - 원형
 
 ---  
-Queue  
-Stack  
-Deque  
+### Queue  
+### Stack  
+### Deque  
 
 ---
-Min-Max heap
+### heap
   - heapify
+  - Min-Max
 
 ---
-Tree
+### Tree
   - 일반
   - 이진
   - Decision tree
   - state space tree
 
 ---
-Graph
+### Graph
   - 방향
   - 무방향
   - DAG
@@ -181,28 +186,28 @@ Graph
   - Adjacency list
 
 ---
-Hash table
+### Hash table
 
 ---
-Disjoint Set(Union Find)
+### Disjoint Set(Union Find)
 
 ---
-trie
+### trie
 
 ---
-segment tree
+### segment tree
   - basic  
   - Persistent Segment Tree  
   - lazy segment tree  
 
-Fenwick tree(= binary indexed tree)
+### Fenwick tree(= binary indexed tree)
 
 ---
-Suffix Array   
-Suffix Tree
+### Suffix Array   
+### Suffix Tree
 
 ---
-Self-Balancing BSTs
+### Self-Balancing BSTs
   - AVL 
   - Splay Tree
   - B Tree
@@ -211,17 +216,17 @@ Self-Balancing BSTs
   - ScapeGoat Tree and Treap
 
 ---
-Sparse tree
-Sparse table
+### Sparse tree
+### Sparse table
 
 ---
-Square Root Decomposition
+### Square Root Decomposition
 
 ---
-k Dimensional Tree
+### k Dimensional Tree
 
 ---
-n-ary Trees and LCA
+### n-ary Trees and LCA
 
 
 
