@@ -1,8 +1,8 @@
 # My addition
 /src/test/
-/src/main/java/Coding_Test/Line
-/src/main/java/Coding_Test/KAKAO
+/src/main/java/Coding_Test
 /src/main/java/Main.java
+/src/main/java/tmp
 
 ### VisualStudio template
 ## Ignore Visual Studio temporary files, build results, and
