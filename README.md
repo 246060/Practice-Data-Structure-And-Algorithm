@@ -6,7 +6,8 @@ index 작성중...
     
 ## Algorithm
 
-sort
+---
+### Sort
   - bubble sort
   - select sort
   - insertion sort
@@ -19,22 +20,28 @@ sort
   - pancake sort
   - tree sort
 
-divide and conquer
+---
+### Divide and Conquer
 
-recursion
+---
+### Recursion
 
-tree traversal
-  - preorder
-  - inorder
-  - postorder
-  - bfs
-  - dfs
+---
+### Traversal
+  - Tree 
+    - pre-order
+    - in-order
+    - post-order
+    - level-order
+    - DFS
+    - BFS
+  - Graph
+    - DFS
+    - BFS
+    - A*
 
-graph traversal
-  - bfs
-  - dfs
-
-search
+---
+### Search
   - linear search
   - binary search
   - lower / upper bound
@@ -49,45 +56,82 @@ search
     - bitmask
     - recursion
     - permutation
-    - bfs/dfs
+    - bfs/dfs 
+  - ternary search
 
-mathematics
+---
+### mathematics
 
-string
+---
+### string
  - Rabin–karp
  - KMP
 
-Bitmask
-greedy
-two point
-Sliding Window
-hash
-Prefix Sum
-simulation
-dynamic programming
-backTracking
+---
+### Bitmask
+### Bit Set
+
+---
+### greedy
+
+---
+### two point
+### Sliding Window
+
+---
+### hash
+
+---
+### Prefix Sum
+
+---
+### simulation
+
+---
+### dynamic programming
+
+---
+### backTracking
   - decision tree(= state space tree)
   - n-queen
   - 0-1 knapsack
-   
-Minimum Spanning Tree
-shortest path
-Lowest Common Ancestor
-Strongly Connected Component
-Minimum Cost Maximum Flow
-Euler Tour Technique
-Articulation Points And Bridges
-Ternary Search
-2-sat
-Heuristics
-Bit Set
-Persistent Segment Tree
-Biconnected Component
-A*
-Longest Common Prefix array (LCP)
+
+---   
+### Minimum Spanning Tree
+
+---
+### shortest path
+
+---
+### Lowest Common Ancestor
+### Binary lifting in Lowest Common Ancestor
+
+---
+### Strongly Connected Component
+
+---
+### Minimum Cost Maximum Flow
+
+---
+### Euler Tour Technique
+
+---
+### Articulation Points And Bridges
+
+---
+### 2-sat
+
+---
+### Heuristics
+
+---
+### Biconnected Component
+
+---
+### Longest Common Prefix array (LCP)
 
 
-Range minimum query
+### Range Query
   - Native approach
   - Square root decomposition
   - Segment tree
@@ -95,31 +139,40 @@ Range minimum query
   - Sparse table
   - Cartesian tree
   
-
-
+#
+#
+#
+#
 ## Data structure 
+#
 Array
   - 일반
   - 원형
   - Dynamic Array
 
+---
 LinkedList
   - 단순
   - 이중
   - 원형
-  
-Queue
-Stack
-Deque
+
+---  
+Queue  
+Stack  
+Deque  
+
+---
 Min-Max heap
   - heapify
 
+---
 Tree
   - 일반
   - 이진
   - Decision tree
   - state space tree
 
+---
 Graph
   - 방향
   - 무방향
@@ -127,33 +180,56 @@ Graph
   - Adjacency matrix
   - Adjacency list
 
+---
 Hash table
 
-
+---
 Disjoint Set(Union Find)
+
+---
 trie
+
+---
 segment tree
+  - basic  
+  - Persistent Segment Tree  
+  - lazy segment tree  
+
 Fenwick tree(= binary indexed tree)
-Suffix Array and Suffix Tree
 
+---
+Suffix Array   
+Suffix Tree
+
+---
 Self-Balancing BSTs
- - AVL 
- - Splay Tree
- - B Tree
- - B+ Tree
- - Red Black Tree
- - ScapeGoat Tree and Treap
+  - AVL 
+  - Splay Tree
+  - B Tree
+  - B+ Tree
+  - Red Black Tree
+  - ScapeGoat Tree and Treap
 
+---
 Sparse tree
 Sparse table
 
+---
 Square Root Decomposition
+
+---
 k Dimensional Tree
+
+---
 n-ary Trees and LCA
-Binary lifting in Lowest Common Ancestor
 
 
 
+
+#
+#
+#
+#
 
 
 ### 참조 사이트
