@@ -152,6 +152,26 @@
 
 ---
 
+### Lowest Common Ancestor
+
+- simple
+- binary search tree
+- using parent pointer
+- Binary lifting in Lowest Common Ancestor
+
+--- 
+
+### Range Query
+
+- Native approach
+- Square root decomposition
+- Segment tree
+- Fenwick tree
+- Sparse table
+- Cartesian tree
+
+---
+
 ### Articulation Points And Bridges
 
 - 단절점
@@ -187,24 +207,6 @@
 ---
 
 ### Biconnected Component
-
----
-
-### Lowest Common Ancestor
-
-- simple
-- binary search tree
-- using parent pointer
-- Binary lifting in Lowest Common Ancestor
-
-### Range Query
-
-- Native approach
-- Square root decomposition
-- Segment tree
-- Fenwick tree
-- Sparse table
-- Cartesian tree
 
 ---
 
