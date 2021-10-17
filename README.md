@@ -11,16 +11,17 @@
 
 ### Sort
 
-- bubble sort
-- select sort
-- insertion sort
+- [bubble sort](src/main/java/concept_study/algorithm/sort/bubble_sort)
 - counting sort
-- quick sort
-- merge sort
 - heap sort
-- radix sort
-- shell sort
+- insertion sort
+- merge sort
 - pancake sort
+- quick sort
+- radix sort
+- select sort
+- shell sort
+- topological sort
 - tree sort
 
 ---
@@ -105,9 +106,10 @@
 
 ---
 
-### Bitmask
+### Bit
 
-### Bit Set
+- bit mask
+- bit set
 
 ---
 
@@ -154,19 +156,10 @@
 
 ---
 
-### Lowest Common Ancestor
+### Articulation Points And Bridges
 
-- simple
-- binary search tree
-- using parent pointer
-- Binary lifting in Lowest Common Ancestor
-
----
-
-### Strongly Connected Component
-
-- kosaraju
-- tarjan
+- 단절점
+- 단절선
 
 ---
 
@@ -182,10 +175,10 @@
 
 ---
 
-### Articulation Points And Bridges
+### Strongly Connected Component
 
-- 단절점
-- 단절선
+- kosaraju
+- tarjan
 
 ---
 
@@ -200,6 +193,13 @@
 ### Biconnected Component
 
 ---
+
+### Lowest Common Ancestor
+
+- simple
+- binary search tree
+- using parent pointer
+- Binary lifting in Lowest Common Ancestor
 
 ### Range Query
 
@@ -290,17 +290,25 @@
 
 ---
 
-### Disjoint Set(Union Find)
+### trie
 
 ---
 
-### trie
+### cache
+
+- LRU
+
+---
+
+### Disjoint Set(Union Find)
 
 ---
 
 ### segment tree
 
 - basic
+- iterative segment tree
+- lazy segment tree
 - Persistent Segment Tree
 - lazy segment tree
 
