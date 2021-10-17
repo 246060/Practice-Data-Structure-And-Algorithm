@@ -12,7 +12,7 @@
 ### Sort
 
 - [bubble sort](src/main/java/concept_study/algorithm/sort/bubble_sort)
-- [counting sort](src/main/java/concept_study/algorithm/sort/counting_sort)
+- ~~[counting sort](src/main/java/concept_study/algorithm/sort/counting_sort)~~
 - [heap sort](src/main/java/concept_study/algorithm/sort/heap_sort)
 - [insertion sort](src/main/java/concept_study/algorithm/sort/insertion_sort)
 - [merge sort](src/main/java/concept_study/algorithm/sort/merge_sort)
