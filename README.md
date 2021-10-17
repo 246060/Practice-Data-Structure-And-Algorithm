@@ -28,8 +28,8 @@
 
 ### Divide and Conquer
 
-- quick sort
-- merge sort
+- [quick sort](src/main/java/concept_study/algorithm/sort/quick_sort)
+- [merge sort](src/main/java/concept_study/algorithm/sort/merge_sort)
 
 ---
 
@@ -43,11 +43,10 @@
 ### Traversal
 
 - Tree
-  - binary tree
-    - pre-order
-    - in-order
-    - post-order
-    - level-order
+  - pre-order
+  - in-order
+  - post-order
+  - level-order
   - DFS
   - BFS
 - Graph
