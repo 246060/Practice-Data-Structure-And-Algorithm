@@ -1,7 +1,8 @@
 # 작성중...
 
-아래 항목을 시간이 날때마다 개념 정리와 예제 코드를 작성해나간다.
+### **Note: 취소선은 정리 완료를 의미함**
 
+아래 항목을 시간이 날때마다 개념 정리와 예제 코드를 작성해나간다.
 <br/>
 <br/>
 
@@ -12,7 +13,7 @@
 ### Sort
 
 - [bubble sort](src/main/java/concept_study/algorithm/sort/bubble_sort)
-- ~~[counting sort](src/main/java/concept_study/algorithm/sort/counting_sort)~~
+- [counting sort](src/main/java/concept_study/algorithm/sort/counting_sort)
 - [heap sort](src/main/java/concept_study/algorithm/sort/heap_sort)
 - [insertion sort](src/main/java/concept_study/algorithm/sort/insertion_sort)
 - [merge sort](src/main/java/concept_study/algorithm/sort/merge_sort)
