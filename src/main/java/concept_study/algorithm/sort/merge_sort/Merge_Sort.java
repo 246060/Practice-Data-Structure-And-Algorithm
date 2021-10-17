@@ -1,4 +1,4 @@
-package concept_study.algorithm.sort.Sort;
+package concept_study.algorithm.sort.merge_sort;
 
 import java.util.Arrays;
 

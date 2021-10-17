@@ -12,17 +12,17 @@
 ### Sort
 
 - [bubble sort](src/main/java/concept_study/algorithm/sort/bubble_sort)
-- counting sort
-- heap sort
-- insertion sort
-- merge sort
-- pancake sort
-- quick sort
-- radix sort
-- select sort
-- shell sort
-- topological sort
-- tree sort
+- [counting sort](src/main/java/concept_study/algorithm/sort/counting_sort)
+- [heap sort](src/main/java/concept_study/algorithm/sort/heap_sort)
+- [insertion sort](src/main/java/concept_study/algorithm/sort/insertion_sort)
+- [merge sort](src/main/java/concept_study/algorithm/sort/merge_sort)
+- [pancake sort](src/main/java/concept_study/algorithm/sort/pancake_sort)
+- [quick sort](src/main/java/concept_study/algorithm/sort/quick_sort)
+- [radix sort](src/main/java/concept_study/algorithm/sort/radix_sort)
+- [select sort](src/main/java/concept_study/algorithm/sort/select_sort)
+- [shell sort](src/main/java/concept_study/algorithm/sort/shell_sort)
+- [topological sort](src/main/java/concept_study/algorithm/sort/topological_sort)
+- [tree sort](src/main/java/concept_study/algorithm/sort/tree_sort)
 
 ---
 
