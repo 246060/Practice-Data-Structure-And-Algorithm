@@ -33,6 +33,7 @@
 ---
 
 ### Recursion
+
 - Hanoi Tower
 - Recursion DFS
 
@@ -182,6 +183,7 @@
 ---
 
 ### Articulation Points And Bridges
+
 - 단절점
 - 단절선
 
@@ -302,6 +304,8 @@
 - Persistent Segment Tree
 - lazy segment tree
 
+---
+
 ### Fenwick tree(= binary indexed tree)
 
 ---
@@ -337,15 +341,13 @@
 
 ---
 
+<!--
 ### n-ary Trees and LCA
+-->
 
-#
-
-#
-
-#
-
-#
+<br/>
+<br/>
+<br/>
 
 ### 참조 사이트
 
