@@ -1,8 +1,7 @@
 # 작성중...
 
-아래 항목을 시간이 날때마다 개념 정리와 예제 코드를 작성해나간다.
-<br/>
-<br/>
+- 아래 항목을 시간이 날때마다 개념 정리와 예제 코드를 작성해나간다.
+
 
 ## Algorithm
 
@@ -32,18 +31,18 @@
 
 ### Recursion
 
-- Hanoi Tower
-- Recursion DFS
+- [Hanoi Tower](src/main/java/concept_study/algorithm/recursion/Hanoi_Tower.java)
+- [Recursion DFS](src/main/java/concept_study/algorithm/graph/Traversal/Basic_DFS_BFS_GraphSearch.java)
 
 ---
 
 ### Traversal
 
 - Tree
-  - pre-order
-  - in-order
-  - post-order
-  - level-order
+  - [pre-order](src/main/java/concept_study/algorithm/graph/Traversal/tree/PreOrder.java)
+  - [in-order](src/main/java/concept_study/algorithm/graph/Traversal/tree/InOrder.java)
+  - [post-order](src/main/java/concept_study/algorithm/graph/Traversal/tree/PostOrder.java)
+  - [level-order](src/main/java/concept_study/algorithm/graph/Traversal/tree/LevelOrder.java)
   - DFS
   - BFS
 - Graph
@@ -111,9 +110,18 @@
 
 ### greedy
 
+- Minimum number of Coins
+- 강의실/회의실 배정
+- Minimum Number of Platforms Required for a Railway/Bus Station
+- Fractional Knapsack Problem
+- Dijkstra’s Algorithm
+- Kruskal
+
 ---
 
 ### two point
+
+---
 
 ### Sliding Window
 
@@ -125,13 +133,28 @@
 
 ### dynamic programming
 
+- memoization / top-down / bottom-up
+- famous example
+  - Fibonacci numbers
+  - Climbing Stairs
+  - Coin Change Problem
+  - Longest Common Subsequence
+  - Longest Increasing Subsequence
+  - Longest Palindromic Subsequence
+  - 0-1 KnapSack
+  - Travelling Salesman
+  - Edit Distance
+  - Matrix Chain Multiplication
+
 ---
 
 ### backTracking
 
 - decision tree(= state space tree)
 - famous example
+  - Palindrome Partitioning
   - n-queen
+  - sudoku
   - 0-1 knapsack
 
 ---   
@@ -215,11 +238,12 @@
 - Euler Tour Technique
 - Longest_Common_Prefix
 - Longest_Common_Subsequence
-- Longest_Increasing_Subsequence
 - Prefix_Sum
 - Sqrt_Decomposition
 - Longest Common Prefix array (LCP)
 - Directed_graph_cycle
+- 2d array 회전
+- 2d lazy update
 
 <br/>
 <br/>
@@ -368,6 +392,7 @@
 - https://blog.naver.com/PostList.nhn?blogId=kks227&categoryNo=299&skinType=&skinId=&from=menu&userSelectMenu=true
 - https://www.crocus.co.kr/category/Applied/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98?page=1
 - https://solved.ac/
+- https://www.geeksforgeeks.org/advanced-data-structures/
 
 - https://www.geeksforgeeks.org/advanced-data-structures/
 - https://iq.opengenus.org/list-of-advanced-data-structures/

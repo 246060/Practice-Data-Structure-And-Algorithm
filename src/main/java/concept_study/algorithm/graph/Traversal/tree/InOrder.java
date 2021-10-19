@@ -1,6 +1,6 @@
-package concept_study.algorithm.graph.Tree.Traversal;
+package concept_study.algorithm.graph.Traversal.tree;
 
-public class PostOrder {
+public class InOrder {
 
     static class Node {
         int value;
@@ -28,17 +28,16 @@ public class PostOrder {
         root.left.left = new Node(4);
         root.left.right = new Node(5);
 
-        System.out.println("PostOrder(Left -> Right -> Root) : ");
-        postOrder(root);
-        System.out.println("\n");
+        System.out.println("InOrder(Left -> Root -> Right) : ");
+        inOrder(root);
     }
 
-    // Left -> Right -> Root
-    static void postOrder(Node node) {
+    // Left -> Root -> Right
+    static void inOrder(Node node) {
         if (node == null) return;
 
-        postOrder(node.left);
-        postOrder(node.right);
+        inOrder(node.left);
         System.out.print(node + " -> ");
+        inOrder(node.right);
     }
 }

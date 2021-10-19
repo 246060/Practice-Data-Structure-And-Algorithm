@@ -1,4 +1,4 @@
-package concept_study.algorithm.graph.Tree.Traversal;
+package concept_study.algorithm.graph.Traversal;
 
 import java.util.ArrayList;
 

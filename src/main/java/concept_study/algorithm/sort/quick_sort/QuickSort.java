@@ -7,7 +7,7 @@ public class QuickSort {
 
     public static void main(String[] args) {
 
-        int[] arr = {10, 7, 8, 9, 1, 5};
+        int[] arr = {10, 8, 1, 1, 6, 5};
         int n = arr.length;
 
         System.out.println("Given Array");
@@ -60,6 +60,7 @@ public class QuickSort {
               high --> Ending index
      */
     static void quickSort(int[] arr, int low, int high) {
+
         if (low < high) {
 
             // pi is partitioning index, arr[p] is now at right place
