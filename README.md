@@ -43,11 +43,11 @@
   - [in-order](src/main/java/concept_study/algorithm/graph/Traversal/tree/InOrder.java)
   - [post-order](src/main/java/concept_study/algorithm/graph/Traversal/tree/PostOrder.java)
   - [level-order](src/main/java/concept_study/algorithm/graph/Traversal/tree/LevelOrder.java)
-  - DFS
-  - BFS
-- Graph
-  - DFS
-  - BFS
+  - DFS : preorder, inorder, postorder
+  - BFS : level order 
+- [Graph]((src/main/java/concept_study/algorithm/graph/Traversal/Basic_DFS_BFS_GraphSearch.java))
+  - DFS : stack, recursive
+  - BFS : queue
 
 ---
 
@@ -133,7 +133,7 @@
 
 ### dynamic programming
 
-- memoization / top-down / bottom-up
+- memoization / top-down / bottom-up / 점화식
 - famous example
   - Fibonacci numbers
   - Climbing Stairs
@@ -150,7 +150,7 @@
 
 ### backTracking
 
-- decision tree(= state space tree)
+- decision tree(= state space tree) / promising / pruning
 - famous example
   - Palindrome Partitioning
   - n-queen
