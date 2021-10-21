@@ -16,7 +16,9 @@ public class Combination1 {
     }
 
     public static List<int[]> generate(int n, int r) {
-        if (r == 0) return new ArrayList<>(List.of(new int[]{}));
+        if (r == 0) {
+            return new ArrayList<>(List.of(new int[]{}));
+        }
 
         List<int[]> combinations = new ArrayList<>();
         int[] combination = new int[r];
