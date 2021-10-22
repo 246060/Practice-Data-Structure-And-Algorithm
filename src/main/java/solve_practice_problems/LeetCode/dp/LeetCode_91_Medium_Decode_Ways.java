@@ -45,7 +45,7 @@ public class LeetCode_91_Medium_Decode_Ways {
             } else if (isValid(s.substring(lastIdx - 1, lastIdx + 1))) {
                 answer[lastIdx - 1] = answer[lastIdx] + 1;
             } else {
-                answer[lastIdx - 1] = answer[lastIdx];
+                answer[lastIdx - 1] = 1;
             }
 
             for (int i = lastIdx - 2, j = lastIdx - 1; i >= 0; i--, j--) {

@@ -33,10 +33,11 @@ public class LeetCode_5_Medium_Longest_Palindromic_Substring {
         public String longestPalindrome(String s) {
 
             int[][] memo = new int[s.length()][s.length()];
+            int n = memo.length;
 
             // init
-            for (int from = 0; from < memo.length; from++) {
-                for (int to = from; to < from + 2 && to < memo[from].length; to++) {
+            for (int from = 0; from < n; from++) {
+                for (int to = from; to < from + 2 && to < n; to++) {
                     if (from == to)
                         memo[from][to] = 1;
                     else
@@ -46,6 +47,7 @@ public class LeetCode_5_Medium_Longest_Palindromic_Substring {
 
             for (int col = 2; col < memo.length; col++) {
                 for (int row = 0; row < col; row++) {
+
                     if (memo[row + 1][col - 1] == 0)
                         continue;
 
@@ -58,19 +60,18 @@ public class LeetCode_5_Medium_Longest_Palindromic_Substring {
                 }
             }
 
-            int[] answer = new int[3];
-
+            int max = 0, from = 0, to = 0;
             for (int i = 0; i < memo.length; i++) {
                 for (int j = i; j < memo[i].length; j++) {
-                    if (answer[0] < memo[i][j]) {
-                        answer[0] = memo[i][j];
-                        answer[1] = i;
-                        answer[2] = j;
+                    if (max < memo[i][j]) {
+                        max = memo[i][j];
+                        from = i;
+                        to = j;
                     }
                 }
             }
 
-            return s.substring(answer[1], answer[2] + 1);
+            return s.substring(from, to + 1);
         }
     }
 }

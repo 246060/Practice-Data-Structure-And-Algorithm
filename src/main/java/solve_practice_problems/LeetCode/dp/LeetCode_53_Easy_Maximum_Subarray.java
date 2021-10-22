@@ -24,13 +24,15 @@ public class LeetCode_53_Easy_Maximum_Subarray {
     private static class Solution {
         // f(n) | f(n-1) + n
         //      | n  & start index 변경
+
         public int maxSubArray(int[] nums) {
 
-            int[] memo = new int[nums.length];
+            int n = nums.length;
+            int[] memo = new int[n];
             memo[0] = nums[0];
 
             int start = 0;
-            for (int i = 1; i < nums.length; i++) {
+            for (int i = 1; i < n; i++) {
                 if (memo[i - 1] + nums[i] < nums[i]) {
                     memo[i] = nums[i];
                     start = i;
@@ -43,12 +45,14 @@ public class LeetCode_53_Easy_Maximum_Subarray {
             // 해당 sub array를 구해야되면?
             int MAX = Integer.MIN_VALUE;
             int end = 0;
-            for (int i = 0; i < memo.length; i++) {
+
+            for (int i = 0; i < n; i++) {
                 if (MAX < memo[i]) {
                     MAX = memo[i];
                     end = i;
                 }
             }
+
             System.out.println(Arrays.toString(Arrays.copyOfRange(nums, start, end + 1)));
             // --------------------------------------------------------
 

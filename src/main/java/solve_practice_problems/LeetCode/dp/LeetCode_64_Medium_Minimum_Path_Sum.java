@@ -20,24 +20,25 @@ public class LeetCode_64_Medium_Minimum_Path_Sum {
     private static class Solution {
 
         public int minPathSum(int[][] grid) {
+            int n = grid.length;
+            int m = grid[0].length;
 
-            int[][] answer = new int[grid.length][grid[0].length];
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < m; j++) {
 
-            for (int i = 0; i < grid.length; i++) {
-                for (int j = 0; j < grid[i].length; j++) {
                     if (i == 0 && j == 0) {
-                        answer[i][j] = grid[i][j];
+                        continue;
                     } else if (i == 0) {
-                        answer[i][j] = grid[i][j] + answer[i][j - 1];
+                        grid[i][j] += grid[i][j - 1];
                     } else if (j == 0) {
-                        answer[i][j] = grid[i][j] + answer[i - 1][j];
+                        grid[i][j] += grid[i - 1][j];
                     } else {
-                        answer[i][j] = grid[i][j] + Math.min(answer[i - 1][j], answer[i][j - 1]);
+                        grid[i][j] += Math.min(grid[i - 1][j], grid[i][j - 1]);
                     }
                 }
             }
 
-            return answer[answer.length - 1][answer[0].length - 1];
+            return grid[n - 1][m - 1];
         }
     }
 }

@@ -33,6 +33,7 @@ public class LeetCode_152_Medium_Maximum_Product_Subarray {
             int max = nums[0];
 
             for (int i = 1; i < nums.length; i++) {
+
                 if (nums[i] == 0) {
                     min = 0;
                     max = 0;
@@ -41,8 +42,10 @@ public class LeetCode_152_Medium_Maximum_Product_Subarray {
                     max = Math.max(nums[i], Math.max(min * nums[i], max * nums[i]));
                     min = tmp;
                 }
+
                 answer = Math.max(max, answer);
             }
+
             return answer;
         }
     }
