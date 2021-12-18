@@ -1,9 +1,6 @@
 package concept_study.algorithm.CPU_Scheduling;
 
 
-import javax.annotation.processing.Completion;
-import java.sql.Time;
-
 public class FCFS_Diff_Arrival_Time {
     // https://www.geeksforgeeks.org/program-for-fcfs-cpu-scheduling-set-2-processes-with-different-arrival-times/
 
