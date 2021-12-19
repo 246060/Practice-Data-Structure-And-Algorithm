@@ -1,23 +1,8 @@
 package concept_study.algorithm.CPU_Scheduling;
 
 
+// https://www.geeksforgeeks.org/program-for-fcfs-cpu-scheduling-set-2-processes-with-different-arrival-times/
 public class FCFS_Diff_Arrival_Time {
-    // https://www.geeksforgeeks.org/program-for-fcfs-cpu-scheduling-set-2-processes-with-different-arrival-times/
-
-    /*
-     * Completion Time:
-     * - Time at which process completes its execution.
-     *
-     * Turn Around Time:
-     * - Time Difference between completion time and arrival time.
-     * - Turn Around Time = Completion Time – Arrival Time
-     *
-     * Waiting Time (W.T):
-     * - Time Difference between turn around time and burst time.
-     * - Waiting Time = Turn Around Time – Burst Time
-     *
-     * */
-
     public static void main(String[] args) {
 
         int[] processes = {1, 2, 3};

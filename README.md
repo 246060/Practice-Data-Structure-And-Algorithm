@@ -240,6 +240,23 @@
 
 ---
 
+
+### CPU Scheduling
+- FCFS
+  - same arrival time
+  - different arrival time
+- SJF(Shortest Job First)
+  - Non-preemptive
+  - Preemptive
+- Priority
+  - Non-preemptive
+    - same arrival time
+    - different arrival time
+  - Preemptive Priority
+- LRTF(Longest Remaining Time First)
+
+
+
 ### Other
 
 - Euler Tour Technique

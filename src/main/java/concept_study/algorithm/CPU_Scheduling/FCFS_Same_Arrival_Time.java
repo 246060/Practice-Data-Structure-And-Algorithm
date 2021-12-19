@@ -6,6 +6,7 @@ public class FCFS_Same_Arrival_Time {
     // assumed arrival times as 0, so turn around and completion times are same.
 
     public static void main(String[] args) {
+
         int n = 3;
         int[] burstTime = {10, 5, 8};
         // int[] burstTime = {5, 8, 10};
@@ -13,17 +14,18 @@ public class FCFS_Same_Arrival_Time {
         int[] waitingTime = new int[n];
         int[] turnAroundTime = new int[n];
 
-        int totalWaitingTime = 0;
-        int totalTurnAroundTime = 0;
-
         waitingTime[0] = 0;
-        for (int i = 1; i < n; i++)
-            waitingTime[i] = waitingTime[i - 1] + burstTime[i - 1];
+        turnAroundTime[0] = waitingTime[0] + burstTime[0];
 
-        for (int i = 0; i < n; i++)
-            turnAroundTime[i] = burstTime[i] + waitingTime[i];
+        for (int i = 1; i < n; i++) {
+            waitingTime[i] = waitingTime[i - 1] + burstTime[i - 1];
+            turnAroundTime[i] = waitingTime[i] + burstTime[i];
+        }
 
         System.out.println("\nProcesses BurstTime WaitingTime TurnAroundTime");
+
+        int totalWaitingTime = 0;
+        int totalTurnAroundTime = 0;
 
         for (int i = 0; i < n; i++) {
             totalWaitingTime += waitingTime[i];
