@@ -83,6 +83,7 @@ public class SJF_Preemptive {
 
     private static void findWaitingTime(Process[] p) {
         int n = p.length;
+
         int[] burstTime = new int[n];
         for (int i = 0; i < n; i++) {
             burstTime[i] = p[i].burstTime;
@@ -111,6 +112,7 @@ public class SJF_Preemptive {
             if (!check) continue;
 
             min = --burstTime[minIdx];
+
             if (min == 0) {
                 min = Integer.MAX_VALUE;
                 cnt++;
